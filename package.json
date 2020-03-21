@@ -1,0 +1,14 @@
+{
+  "name": "nature-bubble",
+  "version": "1.0.0",
+  "description": "Frozen bubble gamejam clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^1.12.4"
+  }
+}
