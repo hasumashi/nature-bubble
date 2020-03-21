@@ -1,0 +1,60 @@
+html,
+body {
+	margin: 0;
+}
+
+#game {
+	display: block;
+	width: fit-content;
+	padding-top: 10px;
+	/* height: 600px; */
+	padding-bottom: 40px;
+
+	/* border: 10px rgb(221, 236, 171) solid; */
+	box-shadow: 0 0 0 10px rgb(221,236,171);
+	margin: auto;
+	margin-top: 3rem;
+
+	/* background: rgba(255, 255, 255, 0.4)
+		url(https://www.publicdomainpictures.net/pictures/70000/velka/natural-green-background-1389459704YWX.jpg); */
+	background-size: cover;
+	background-blend-mode: color;
+}
+
+.bubble {
+	--bubbleSize: 40px;
+	display: inline-block;
+
+	height: var(--bubbleSize);
+	width: var(--bubbleSize);
+
+	background: hsl(0, 0%, 91%);
+	border-radius: var(--bubbleSize);
+	border: 2px #888 solid;
+	box-shadow: 0 0 3px #0001;
+
+	opacity: 0;
+}
+
+.bubble.exist {
+	opacity: 1;
+}
+
+.bubble.r {
+	background: rgb(233, 78, 39);
+}
+.bubble.g {
+	background: rgb(117, 233, 39);
+}
+.bubble.b {
+	background: rgb(39, 130, 233);
+}
+
+.bubble-row {
+	margin-top: -7px;
+}
+
+.bubble-row:nth-child(even) {
+	/*--bubbleSize: 40px;*/
+	padding-left: 23px;
+}
